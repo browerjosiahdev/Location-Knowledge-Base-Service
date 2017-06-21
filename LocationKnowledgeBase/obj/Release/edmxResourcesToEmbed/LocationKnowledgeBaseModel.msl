@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LocationKnowledgeBaseModelStoreContainer" CdmEntityContainer="LocationKnowledgeBaseEntities">
+    <EntitySetMapping Name="contents">
+      <EntityTypeMapping TypeName="LocationKnowledgeBaseModel.content">
+        <MappingFragment StoreEntitySet="content">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="body" ColumnName="body" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
