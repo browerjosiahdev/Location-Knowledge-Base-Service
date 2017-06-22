@@ -18,5 +18,6 @@ namespace LocationKnowledgeBase
         public string title { get; set; }
         public string body { get; set; }
         public string mac { get; set; }
+        public short rssi { get; set; }
     }
 }

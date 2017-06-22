@@ -16,5 +16,15 @@ namespace LocationKnowledgeBase.Models
         public string Body { get; set; }
         [JsonProperty(PropertyName = "macAddress")]
         public string MacAddress { get; set; }
+        [JsonProperty(PropertyName = "rssi")]
+        public int RSSI { get; set; }
+    }
+
+    public class KnowledgeItemRequestDataModel
+    {
+        [JsonProperty(PropertyName = "id")]
+        public string Id { get; set; }
+        [JsonProperty(PropertyName = "rssi")]
+        public int RSSI { get; set; }
     }
 }

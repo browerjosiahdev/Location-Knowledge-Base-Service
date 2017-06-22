@@ -4,6 +4,7 @@
     <EntitySetMapping Name="contents">
       <EntityTypeMapping TypeName="LocationKnowledgeBaseModel.content">
         <MappingFragment StoreEntitySet="content">
+          <ScalarProperty Name="rssi" ColumnName="rssi" />
           <ScalarProperty Name="mac" ColumnName="mac" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="title" ColumnName="title" />
