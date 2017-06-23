@@ -42,7 +42,8 @@ namespace LocationKnowledgeBase.Controllers
                     Title = content.title,
                     Body = content.body,
                     MacAddress = content.mac,
-                    RSSI = content.rssi
+                    RSSI = content.rssi,
+                    URL = content.url
                 })
                 .FirstOrDefault();
         }

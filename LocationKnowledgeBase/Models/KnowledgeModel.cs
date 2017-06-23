@@ -18,6 +18,8 @@ namespace LocationKnowledgeBase.Models
         public string MacAddress { get; set; }
         [JsonProperty(PropertyName = "rssi")]
         public int RSSI { get; set; }
+        [JsonProperty(PropertyName = "url")]
+        public string URL { get; set; }
     }
 
     public class KnowledgeItemRequestDataModel

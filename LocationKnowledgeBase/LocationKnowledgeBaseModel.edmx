@@ -14,6 +14,7 @@
           <Property Name="body" Type="varchar" MaxLength="2000" />
           <Property Name="mac" Type="varchar" MaxLength="50" />
           <Property Name="rssi" Type="smallint" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="2000" />
         </EntityType>
         <EntityContainer Name="LocationKnowledgeBaseModelStoreContainer">
           <EntitySet Name="content" EntityType="Self.content" Schema="dbo" store:Type="Tables" />
@@ -31,6 +32,7 @@
           <Property Name="body" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
           <Property Name="mac" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="rssi" Type="Int16" Nullable="false" />
+          <Property Name="url" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityContainer Name="LocationKnowledgeBaseEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="contents" EntityType="Self.content" />
@@ -44,6 +46,7 @@
           <EntitySetMapping Name="contents">
             <EntityTypeMapping TypeName="LocationKnowledgeBaseModel.content">
               <MappingFragment StoreEntitySet="content">
+                <ScalarProperty Name="url" ColumnName="url" />
                 <ScalarProperty Name="rssi" ColumnName="rssi" />
                 <ScalarProperty Name="mac" ColumnName="mac" />
                 <ScalarProperty Name="id" ColumnName="id" />

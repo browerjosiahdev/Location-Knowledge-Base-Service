@@ -9,6 +9,7 @@
     <Property Name="body" Type="varchar" MaxLength="2000" />
     <Property Name="mac" Type="varchar" MaxLength="50" />
     <Property Name="rssi" Type="smallint" Nullable="false" />
+    <Property Name="url" Type="varchar" MaxLength="2000" />
   </EntityType>
   <EntityContainer Name="LocationKnowledgeBaseModelStoreContainer">
     <EntitySet Name="content" EntityType="Self.content" Schema="dbo" store:Type="Tables" />
